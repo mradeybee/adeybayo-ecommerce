@@ -1,5 +1,7 @@
 # README
 
+[![CircleCI](https://circleci.com/gh/andela-aadepoju/adeybayo-ecommerce.svg?style=svg)](https://circleci.com/gh/andela-aadepoju/adeybayo-ecommerce)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
