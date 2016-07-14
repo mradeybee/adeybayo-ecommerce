@@ -1,0 +1,29 @@
+<h1>Edit <%= @product.name %></h1>
+
+<div class="errors">
+  <%= flash[:error] %>
+</div>
+
+<!--
+<form action="/products/<%= @product.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+
+  <label for="product_name">Name</label>
+  <input id="product_name" type="text" value="<%= @product.name %>" name="product[name]">
+
+  <label for="product_price">Price</label>
+  <input id="product_price" type="text" value="<%= @product.price.format %>" name="product[price]">
+
+  <button>Submit</button>
+</form>
+-->
+
+<%= form_for @product do |f| %>
+  <%= f.label :name, for: "whatever" %>
+  <%= f.text_field :name, id: "whatever" %>
+
+  <%= f.label :price, "Price in USD" %>
+  <%= f.text_field :price, value: @product.price.format %>
+
+  <%= f.button "Submit" %>
+<% end %>
